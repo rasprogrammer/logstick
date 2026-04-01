@@ -26,7 +26,7 @@ const FURNITURE = [
     title: "WARDROBE",
     products: 5,
     href: "/readymade-furniture/wardrobe",
-    image: WardrobeImage,
+    image: wardrobe,
   },
   {
     title: "DRESSER",

@@ -7,32 +7,36 @@ import OfficeChairImage from "@/public/Images/Office-Solution/OFFICE-CHAIRS/Conf
 import SoftSeatingReceptionImage from "@/public/Images/Office-Solution/SOFT-SEATING-&-OFFICE-SOFAS/Accent-&-Lounge Chairs/accent-&-lounge-chair-1.png"
 import StorageReceptionImage from "@/public/Images/Office-Solution/STORAGE-&-RECEPTION/Bookshelves-Open-Shelving/Bookshelves-Open-Shelving-1.png"
 import TablesMeatingFurnitureImage from "@/public/Images/Office-Solution/TABLES-&-MEETING-FURNITURE/Collaboration-Discussion-Table/Collaboration-Discussion-Table-1.png"
-
+import workstation from "../public/Images/New-Arrival/workstation.png";
+import office_chair from "../public/Images/New-Arrival/office_chair.png";
+import meeting_furniture from "../public/Images/New-Arrival/meeting_furniture.png";
+import storage_reception from "../public/Images/New-Arrival/storage_reception.png";
+import soft_seating from "../public/Images/New-Arrival/soft_seating.png";
 const SOLUTIONS = [
   {
     title: "WORKSTATION",
     href: "/office-solutions/workstation",
-    image: WorkStationImage,
+    image: workstation,
   },
   {
     title: "OFFICE CHAIRS",
     href: "/office-solutions/office-chairs",
-    image: OfficeChairImage,
+    image: office_chair,
   },
   {
     title: "TABLES & MEETING FURNITURE",
     href: "/office-solutions/tables-meeting-furniture",
-    image: TablesMeatingFurnitureImage,
+    image: meeting_furniture,
   },
   {
     title: "STORAGE & RECEPTION",
     href: "/office-solutions/storage-reception",
-    image: StorageReceptionImage,
+    image: storage_reception,
   },
   {
     title: "SOFT SEATING & OFFICE SOFAS",
     href: "/office-solutions/soft-seating-office-sofas",
-    image: SoftSeatingReceptionImage,
+    image: soft_seating,
   },
 ];
 

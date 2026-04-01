@@ -1,6 +1,7 @@
 "use client";
 
-import PreDeliveryInspectionCoverImage from "@/public/Images/Pre-Delivery-Inspection-Cover-Page.png";
+import PreDeliveryInspectionCoverImage1 from "@/public/Images/Pre-Delivery-Inspection-Cover-Page.png";
+import PreDeliveryInspectionCoverImage from "../public/Images/New-Arrival/about.jpeg";
 
 export default function PreDeliveryInspection() {
   return (

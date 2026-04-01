@@ -7,6 +7,12 @@ import WardrobeImage from "@/public/Images/Home-Solution/Bedroom-Furniture/Wardr
 import DresserImage from "@/public/Images/Home-Solution/Bedroom-Furniture/Beds/bed-2.png";
 import ShoeRackImage from "@/public/Images/Home-Solution/Bedroom-Furniture/Beds/bed-2.png";
 import SofaImage from "@/public/Images/Home-Solution/Bedroom-Furniture/Beds/bed-2.png";
+import bed from "../public/Images/New-Arrival/bed.png";
+import wardrobe from "../public/Images/New-Arrival/wardrobe.png";
+import dresser from "../public/Images/New-Arrival/dresser.png";
+import shoe_rack from "../public/Images/New-Arrival/shoe_rack.png";
+import sofa from "../public/Images/New-Arrival/sofa.png";
+
 
 
 const FURNITURE = [
@@ -22,24 +28,24 @@ const FURNITURE = [
     href: "/readymade-furniture/wardrobe",
     image: WardrobeImage,
   },
-  // {
-  //   title: "DRESSER",
-  //   products: 6,
-  //   href: "/readymade-furniture/dresser",
-  //   image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-  // },
-  // {
-  //   title: "SHOE RACK",
-  //   products: 0,
-  //   href: "/readymade-furniture/shoe-rack",
-  //   image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
-  // },
-  // {
-  //   title: "SOFA",
-  //   products: 0,
-  //   href: "/readymade-furniture/sofa",
-  //   image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&q=80",
-  // },
+  {
+    title: "DRESSER",
+    products: 6,
+    href: "/readymade-furniture/dresser",
+    image: dresser,
+  },
+  {
+    title: "SHOE RACK",
+    products: 0,
+    href: "/readymade-furniture/shoe-rack",
+    image: shoe_rack,
+  },
+  {
+    title: "SOFA",
+    products: 0,
+    href: "/readymade-furniture/sofa",
+    image: sofa,
+  },
 ];
 
 export default function ReadymadeFurniture() {

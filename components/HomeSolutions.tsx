@@ -6,27 +6,37 @@ import ModuleKitchenImage from "@/public/Images/Home-Solution/Modular-KItchen/Is
 import WardrobesImage from "@/public/Images/Home-Solution/Wardrobes/Free-standing-Wardrobe/free-standing-wardrobe-1.png";
 import LivingRoomImage from "@/public/Images/Home-Solution/Living-Room-Furniture/Accent-Chairs/accent-chair-1.png";
 import BedRoomImage  from "@/public/Images/Home-Solution/Bedroom-Furniture/Beds/bed-1.png";
+import custom_interior from "../public/Images/New-Arrival/sofa.png";
+import modular_kitchen from "../public/Images/New-Arrival/modular_kitchen.png";
+import wardrobes from "../public/Images/New-Arrival/wardrobes.png";
+import livingroom from "../public/Images/New-Arrival/livingroom.png";
+import bedroom_furniture from "../public/Images/New-Arrival/bedroom_furniture.png";
 
 const SOLUTIONS = [
   {
+    title: "CUSTOM INTERIORS",
+    href: "/home-solutions/modular-kitchen",
+    image: custom_interior,
+  },
+  {
     title: "MODULAR KITCHEN",
     href: "/home-solutions/modular-kitchen",
-    image: ModuleKitchenImage,
+    image: modular_kitchen,
   },
   {
     title: "WARDROBES",
     href: "/home-solutions/wardrobes",
-    image: WardrobesImage,
+    image: wardrobes,
   },
   {
     title: "LIVING ROOM FURNITURE",
     href: "/home-solutions/living-room-furniture",
-    image: LivingRoomImage,
+    image: livingroom,
   },
   {
     title: "BEDROOM FURNITURE",
     href: "/home-solutions/bedroom-furniture",
-    image: BedRoomImage,
+    image: bedroom_furniture,
   },
 ];
 

@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import AboutUsImage from "@/public/Images/About-Us.png";
+import aboutus from "../public/Images/New-Arrival/about.jpeg";
 
 export default function AboutUs() {
   return (
@@ -36,7 +37,7 @@ export default function AboutUs() {
         {/* Right: Image */}
         <div className="flex-1 w-full">
           <Image
-            src={AboutUsImage}
+            src={aboutus}
             alt="Logstick interior design showcase"
             placeholder="blur"
             className="w-full h-[420px] object-cover rounded-lg shadow-md"

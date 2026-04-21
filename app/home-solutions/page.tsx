@@ -1,6 +1,6 @@
 import HomeSolutions from "@/components/HomeSolutions";
 
-export default function () {
+export default function HomeSolutionsPage() {
     return <div>
         <HomeSolutions />
     </div>

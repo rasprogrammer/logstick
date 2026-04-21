@@ -11,11 +11,12 @@ import modular_kitchen from "../public/Images/New-Arrival/modular_kitchen.png";
 import wardrobes from "../public/Images/New-Arrival/wardrobes.png";
 import livingroom from "../public/Images/New-Arrival/livingroom.png";
 import bedroom_furniture from "../public/Images/New-Arrival/bedroom_furniture.png";
+import Link from "next/link";
 
 const SOLUTIONS = [
   {
     title: "CUSTOM INTERIORS",
-    href: "/home-solutions/modular-kitchen",
+    href: "/home-solutions/custom-interiors",
     image: custom_interior,
   },
   {
@@ -60,7 +61,7 @@ export default function HomeSolutions() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
           {SOLUTIONS.map((item) => (
-            <a
+            <Link
               key={item.title}
               href={item.href}
               className="group relative overflow-hidden aspect-[4/3] block"
@@ -84,7 +85,7 @@ export default function HomeSolutions() {
                   VIEW
                 </span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

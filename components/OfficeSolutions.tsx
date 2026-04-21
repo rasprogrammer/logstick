@@ -12,6 +12,7 @@ import office_chair from "../public/Images/New-Arrival/office_chair.png";
 import meeting_furniture from "../public/Images/New-Arrival/meeting_furniture.png";
 import storage_reception from "../public/Images/New-Arrival/storage_reception.png";
 import soft_seating from "../public/Images/New-Arrival/soft_seating.png";
+import Link from "next/link";
 const SOLUTIONS = [
   {
     title: "WORKSTATION",
@@ -60,7 +61,7 @@ export default function OfficeSolutions() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
           {SOLUTIONS.map((item) => (
-            <a
+            <Link
               key={item.title}
               href={item.href}
               className="group relative overflow-hidden aspect-[4/3] block"
@@ -84,7 +85,7 @@ export default function OfficeSolutions() {
                   VIEW
                 </span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

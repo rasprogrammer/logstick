@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import AboutUsImage from "@/public/Images/About-Us.png";
 import aboutus from "../public/Images/New-Arrival/about.jpeg";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -26,12 +27,12 @@ export default function AboutUs() {
             spaces into functional, stylish environments.
           </p>
 
-          <a
-            href="/about"
+          <Link
+            href="/about-us-details"
             className="inline-block bg-red-700 hover:bg-red-800 active:bg-red-900 text-white text-sm font-bold tracking-widest uppercase px-8 py-4 rounded transition-colors duration-200"
           >
             Know More
-          </a>
+          </Link>
         </div>
 
         {/* Right: Image */}

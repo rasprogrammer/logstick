@@ -67,13 +67,13 @@ export default function Navbar() {
               <ul className="absolute right-0 mt-1 bg-white border border-gray-200 rounded shadow-lg py-1 w-44 z-50">
                 {MORE_ITEMS.map((item) => (
                   <li key={item.label}>
-                    <a
+                    <Link
                       href={item.href}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 transition-colors"
                       onClick={() => setMoreOpen(false)}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

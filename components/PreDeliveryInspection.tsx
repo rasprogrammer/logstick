@@ -2,6 +2,7 @@
 
 import PreDeliveryInspectionCoverImage1 from "@/public/Images/Pre-Delivery-Inspection-Cover-Page.png";
 import PreDeliveryInspectionCoverImage from "../public/Images/New-Arrival/about.jpeg";
+import Link from "next/link";
 
 export default function PreDeliveryInspection() {
   return (
@@ -34,12 +35,12 @@ export default function PreDeliveryInspection() {
         </p>
 
         {/* CTA Button */}
-        <a
-          href="/pre-delivery-inspection"
+        <Link
+          href="/pdi"
           className="inline-block bg-red-700 hover:bg-red-800 active:bg-red-900 text-white text-sm font-bold tracking-widest uppercase px-12 py-4 rounded transition-colors duration-200"
         >
           Read More
-        </a>
+        </Link>
       </div>
     </section>
   );

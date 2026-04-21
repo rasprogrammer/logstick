@@ -5,6 +5,7 @@ import HomeSolutionIcon from "@/public/Images/Services-Icons/HOME-SOLUTION.png";
 import OfficeSolutionIcon from "@/public/Images/Services-Icons/OFFICE-SOLUTION.png";
 import PreDeliveryInspectionIcon from "@/public/Images/Services-Icons/PRE-DELIVERY-INSPECTION.png";
 import ReadyMadeFurnitureIcon from "@/public/Images/Services-Icons/READYMADE-FURNITURE.png"
+import Link from "next/link";
 
 const SERVICES = [
   {
@@ -65,12 +66,12 @@ export default function ServicesSection() {
               </h3>
 
               {/* CTA */}
-              <a
+              <Link
                 href={service.href}
                 className="inline-block bg-red-700 hover:bg-red-800 active:bg-red-900 text-white text-xs font-bold tracking-widest uppercase px-8 py-3 rounded transition-colors duration-200"
               >
                 Know More
-              </a>
+              </Link>
             </div>
           ))}
         </div>

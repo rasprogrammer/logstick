@@ -23,7 +23,6 @@ export default function Home() {
       <NewArrival />
       <Testimonials />
       <ContactSection />
-      <Footer />
     </div>
   );
 }

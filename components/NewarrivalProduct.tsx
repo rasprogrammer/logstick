@@ -1,11 +1,15 @@
 // components/ProductCard.jsx
+import { ProductType } from "@/api/category";
 import Image from "next/image";
+import Link from "next/link";
+
+
 
 export default function NewArrivalProduct({ product }: {
-    product: any 
+    product: ProductType 
 }) {
   return (
-    <div className="bg-white h-[500px] rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-3 group">
+    <Link href={`/store/${product.id}`} className="bg-white h-[500px] rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-3 group">
       
       {/* Image Section */}
       <div className="relative overflow-hidden rounded-xl">
@@ -58,6 +62,6 @@ export default function NewArrivalProduct({ product }: {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

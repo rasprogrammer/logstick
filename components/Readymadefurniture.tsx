@@ -12,6 +12,7 @@ import wardrobe from "../public/Images/New-Arrival/wardrobe.png";
 import dresser from "../public/Images/New-Arrival/dresser.png";
 import shoe_rack from "../public/Images/New-Arrival/shoe_rack.png";
 import sofa from "../public/Images/New-Arrival/sofa.png";
+import Link from "next/link";
 
 
 
@@ -19,31 +20,31 @@ const FURNITURE = [
   {
     title: "BED",
     products: 10,
-    href: "/readymade-furniture/bed",
+    href: "/store/bed",
     image: BedImage,
   },
   {
     title: "WARDROBE",
     products: 5,
-    href: "/readymade-furniture/wardrobe",
+    href: "/store/wardrobe",
     image: wardrobe,
   },
   {
     title: "DRESSER",
     products: 6,
-    href: "/readymade-furniture/dresser",
+    href: "/store/dresser",
     image: dresser,
   },
   {
     title: "SHOE RACK",
     products: 0,
-    href: "/readymade-furniture/shoe-rack",
+    href: "/store/shoe-rack",
     image: shoe_rack,
   },
   {
     title: "SOFA",
     products: 0,
-    href: "/readymade-furniture/sofa",
+    href: "/store/sofa",
     image: sofa,
   },
 ];
@@ -85,7 +86,7 @@ export default function ReadymadeFurniture() {
 
 function FurnitureCard({ item }: { item: { title: string; products: number; href: string; image: any } }) {
   return (
-    <a
+    <Link
       href={item.href}
       className="group relative overflow-hidden aspect-[3/4] block rounded-sm"
     >
@@ -108,6 +109,6 @@ function FurnitureCard({ item }: { item: { title: string; products: number; href
           {item.products} Products
         </p>
       </div>
-    </a>
+    </Link>
   );
 }

@@ -8,6 +8,7 @@ import OfficeSolutions from "@/components/OfficeSolutions";
 import PreDeliveryInspection from "@/components/PreDeliveryInspection";
 import ReadymadeFurniture from "@/components/Readymadefurniture";
 import ServicesSection from "@/components/Services";
+import Store from "@/components/store/Store";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
@@ -19,8 +20,7 @@ export default function Home() {
       <PreDeliveryInspection />
       <HomeSolutions />
       <OfficeSolutions />
-      <ReadymadeFurniture />
-      <NewArrival />
+      <Store />
       <Testimonials />
       <ContactSection />
     </div>

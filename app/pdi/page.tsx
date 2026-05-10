@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 
 export default function pdiPage() {
@@ -6,12 +7,14 @@ export default function pdiPage() {
         {
             title: "Pre Delivery Inspection (PDI)",
             description:
-            "Ensure your home is defect-free before possession. Logstick’s expert-led inspection identifies construction and finishing issues."
+            "Ensure your home is defect-free before possession. Logstick’s expert-led inspection identifies construction and finishing issues.",
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-1.webp"
         },
         {
             title: "What is a Pre-Delivery Inspection?",
             description:
-            "A Pre-Delivery Inspection (PDI) is a sectioned quality check of your new flat or villa before you take possession. Our experts identify issues in civil work, electricals, plumbing, and finishing — ensuring your home is truly move-in ready."
+            "A Pre-Delivery Inspection (PDI) is a sectioned quality check of your new flat or villa before you take possession. Our experts identify issues in civil work, electricals, plumbing, and finishing — ensuring your home is truly move-in ready.",
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-2.webp"
         },
         {
             title: "Why PDI Matters Before You Move In?",
@@ -22,7 +25,8 @@ export default function pdiPage() {
                 "🧱 Catch poor plaster or tile leveling",
                 "📏 Verify carpet area accuracy using laser measurement",
                 "💰 Save 3–5× in future repair costs"
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-3.webp"
         },
         {
             title: "What We Check",
@@ -34,7 +38,8 @@ export default function pdiPage() {
                 "Kitchen & Bathroom: joints, fittings, sealing",
                 "Flooring: hollow tiles, leveling",
                 "Carpet Area: verified with laser measurement"
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-4.webp"
         },
         {
             title: "Professional Tools for Reliable Results",
@@ -44,7 +49,8 @@ export default function pdiPage() {
                 "Non-pin Moisture Meter (detects moisture up to 19 mm deep)",
                 "Laser Distance Meter (for carpet area verification)",
                 "Spirit Level & Flashlight (for alignment & visibility)"
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-5.webp"
         },
         {
             title: "How It Works",
@@ -53,7 +59,8 @@ export default function pdiPage() {
                 "2️⃣ On-Site Inspection — Comprehensive checks across rooms",
                 "3️⃣ sectioned Report — Photo-based findings within 48 hours",
                 "4️⃣ Fix Before Handover — Builder corrects issues before possession"
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-6.webp"
         },
         {
             title: "Why Choose Logstick for PDI?",
@@ -63,7 +70,8 @@ export default function pdiPage() {
                 "Transparent, photo-based reports",
                 "Delivered within 48 hours",
                 "Trusted by homeowners & interior clients"
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-7.webp"
         },
         {
             title: "Transparent Pricing",
@@ -73,7 +81,8 @@ export default function pdiPage() {
                 { type: "3 BHK", price: "₹7,999" },
                 { type: "Revisit", price: "₹1,000" }
             ],
-            note: "Transparent fixed rates — no hidden charges."
+            note: "Transparent fixed rates — no hidden charges.",
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-8.webp"
         },
         {
             title: "Did You Know?",
@@ -81,12 +90,14 @@ export default function pdiPage() {
                 "60% of new flats show moisture or seepage within a year.",
                 "1 in 3 homes are handed over with electrical defects.",
                 "Fixing after possession costs 3–5× more."
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-9.webp"
         },
         {
             title: "Book Your PDI Now",
             description:
-            "Get your home inspected before you move in — avoid hidden costs and ensure perfect finishing. Book your PDI with Logstick today."
+            "Get your home inspected before you move in — avoid hidden costs and ensure perfect finishing. Book your PDI with Logstick today.",
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-10.webp"
         },
         {
             title: "Frequently Asked Questions (FAQ)",
@@ -115,7 +126,8 @@ export default function pdiPage() {
                     answer:
                     "We check every room for civil, plumbing, electrical, and finishing issues — including kitchen, bathrooms, and balconies."
                 }
-            ]
+            ],
+            image: "/images/pre-delivery-inspection/pre-delivery-inspection-11.webp"
         }
     ];
 
@@ -180,7 +192,9 @@ export default function pdiPage() {
                         )}
                     </div>
                     {/* Add any images or additional content here if needed */}
-                    
+                    <div className="">
+                        <Image src={section.image} alt={section.title} width={500} height={500} />
+                    </div>
                 </div>
             ))}
         </>

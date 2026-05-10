@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import HeroSectionCoverImage from "@/public/Images/Cover-Page.png";
+import HeroSectionCoverImage from "@/public/images/cover-page.png";
 
 export default function HeroSection() {
   return (

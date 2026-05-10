@@ -1,32 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import HomeSolutionIcon from "@/public/Images/Services-Icons/HOME-SOLUTION.png";
-import OfficeSolutionIcon from "@/public/Images/Services-Icons/OFFICE-SOLUTION.png";
-import PreDeliveryInspectionIcon from "@/public/Images/Services-Icons/PRE-DELIVERY-INSPECTION.png";
-import ReadyMadeFurnitureIcon from "@/public/Images/Services-Icons/READYMADE-FURNITURE.png"
 import Link from "next/link";
+
+import HomeSolutionIcon from "@/public/images/services-icons/home-solution.png";
+import OfficeSolutionIcon from "@/public/images/services-icons/office-solution.png";
+import PreDeliveryInspectionIcon from "@/public/images/services-icons/pre-delivery-inspection.png";
+import ReadyMadeFurnitureIcon from "@/public/images/services-icons/readymade-furniture.png";
 
 const SERVICES = [
   {
     title: "PRE DELIVERY INSPECTION",
     href: "/pre-delivery-inspection",
-    icon: (PreDeliveryInspectionIcon),
+    icon: PreDeliveryInspectionIcon,
   },
   {
     title: "HOME SOLUTION",
     href: "/home-solutions",
-    icon: (HomeSolutionIcon),
+    icon: HomeSolutionIcon,
   },
   {
     title: "OFFICE SOLUTION",
     href: "/office-solutions",
-    icon: (OfficeSolutionIcon),
+    icon: OfficeSolutionIcon,
   },
   {
     title: "READYMADE FURNITURE",
     href: "/readymade-furniture",
-    icon: (ReadyMadeFurnitureIcon),
+    icon: ReadyMadeFurnitureIcon,
   },
 ];
 
@@ -34,12 +35,12 @@ export default function ServicesSection() {
   return (
     <section className="w-full bg-white py-20 px-4">
       <div className="max-w-screen-xl mx-auto">
-
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-serif font-bold tracking-widest text-gray-900 uppercase mb-4">
             Services
           </h2>
+
           {/* Decorative dots + line */}
           <div className="flex items-center justify-center gap-2">
             <span className="w-2 h-2 rounded-full bg-gray-300 inline-block" />
@@ -49,15 +50,19 @@ export default function ServicesSection() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-14 justify-items-center">
           {SERVICES.map((service) => (
             <div
               key={service.title}
               className="flex flex-col items-center text-center gap-6 w-full max-w-xs"
             >
               {/* Icon circle */}
-              <div className="w-28 h-28 rounded-full bg-[#f5ede6] flex items-center justify-center shadow-sm">
-                <Image src={service.icon} alt={service.title} />
+              <div className="w-28 h-28 rounded-full bg-[#f5ede6] flex items-center justify-center shadow-sm p-5">
+                <Image
+                  src={service.icon}
+                  alt={service.title}
+                  className="object-contain"
+                />
               </div>
 
               {/* Title */}
@@ -75,7 +80,6 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

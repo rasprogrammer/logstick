@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ArrowRight from "./icons/ArrowRight";
 import { BASE_URL } from "@/config";
+import Image from "next/image";
 
 export interface SolutionGalleryType {
     subtitle: string;
@@ -37,7 +38,7 @@ export default function SolutionGallary ({ heading, list }: {
             
                     {/* Thumbnails */}
                     <div className="flex gap-1 p-1.5 bg-[#f5f1ec]">
-                        {item.images.map((src, i) => (
+                        {item.images && item.images.map((src, i) => (
                         <button
                             key={i}
                             onClick={() => setActiveImg(i)}
@@ -46,7 +47,13 @@ export default function SolutionGallary ({ heading, list }: {
                             bg-transparent cursor-pointer transition-all duration-200
                             ${activeImg === i ? "border-[#c8a96e]" : "border-transparent hover:border-[#c8a96e]/40"}`}
                         >
-                            <img src={src} alt="" className="w-full h-full object-cover" />
+                            <Image 
+                                src={src} 
+                                alt="" 
+                                width={500}
+                                height={500}
+                                className="w-full h-full object-cover" 
+                            />
                         </button>
                         ))}
                     </div>

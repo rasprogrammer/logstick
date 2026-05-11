@@ -3,10 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import HomeSolutionIcon from "@/public/images/services-icons/home-solution.png";
-import OfficeSolutionIcon from "@/public/images/services-icons/office-solution.png";
-import PreDeliveryInspectionIcon from "@/public/images/services-icons/pre-delivery-inspection.png";
-import ReadyMadeFurnitureIcon from "@/public/images/services-icons/readymade-furniture.png";
+const HomeSolutionIcon = "/images/services-icons/home-solution.png";
+const OfficeSolutionIcon = "/images/services-icons/office-solution.png";
+const PreDeliveryInspectionIcon = "/images/services-icons/pre-delivery-inspection.png";
+const ReadyMadeFurnitureIcon = "/images/services-icons/readymade-furniture.png";
 
 const SERVICES = [
   {
@@ -61,6 +61,8 @@ export default function ServicesSection() {
                 <Image
                   src={service.icon}
                   alt={service.title}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />
               </div>

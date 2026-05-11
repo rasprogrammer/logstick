@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 
-import AboutUsImage from "@/public/Images/About-Us.png";
-import aboutus from "../public/Images/New-Arrival/about.jpeg";
 import Link from "next/link";
 
 export default function AboutUs() {
+
+  const image_src = '/images/about-us.png';
+
   return (
     <section className="w-full bg-white py-20 px-4">
       <div className="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
@@ -38,10 +39,11 @@ export default function AboutUs() {
         {/* Right: Image */}
         <div className="flex-1 w-full">
           <Image
-            src={aboutus}
+            src={image_src}
             alt="Logstick interior design showcase"
-            placeholder="blur"
             className="w-full h-[420px] object-cover rounded-lg shadow-md"
+            width={500}
+            height={500}
           />
         </div>
 

@@ -1,10 +1,9 @@
-"use client";
 
-import Image from "next/image";
-
-import HeroSectionCoverImage from "@/public/images/cover-page.png";
 
 export default function HeroSection() {
+
+  const herosection_image = "images/cover-page.png";
+
   return (
     <section className="relative w-full min-h-[480px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -12,7 +11,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            `url(${HeroSectionCoverImage.src})`,
+            `url(${herosection_image})`,
         }}
       />
 
